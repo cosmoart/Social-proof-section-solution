@@ -94,7 +94,7 @@ h1 {
     display: flex;
     gap: 1rem;
 }
-.testimonials section {
+.testimonials div {
     background-color: var(--VeryDarkMagenta);
     color: rgb(255, 255, 255);
     border-radius: 8px;
