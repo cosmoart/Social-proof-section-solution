@@ -1,0 +1,175 @@
+/* ==== VAR ============ */
+:root {
+    /* Primary colors */
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    /* Neutral colors */
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+/* ==== ATTRIBUTION ==== */
+.attribution {
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: var(--DarkBlue);
+    font-family: "Red Hat Display", sans-serif;
+    opacity: 0;
+}
+
+.attribution:hover {
+    opacity: 1;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* ==== CHALLENGE ====== */
+body {
+    font-family: "League Spartan", sans-serif;
+    font-size: 15px;
+    padding: 2rem 3rem;
+    display: flex;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+main {
+    max-width: 58rem;
+    margin: auto;
+}
+h1 {
+    font-size: clamp(2.2rem, 5vw, 3.3rem);
+    color: var(--VeryDarkMagenta);
+    margin: 10px 0;
+    line-height: 43px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.intro {
+    max-width: 25rem;
+}
+.intro p {
+    color: hsla(300, 43%, 22%, 0.6);
+    font-weight: 700;
+    font-size: 1rem;
+}
+.stars {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.stars p {
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    background-color: hsla(302, 10%, 53%, 0.1);
+    color: var(--VeryDarkMagenta);
+}
+.stars p::before {
+    content: "";
+    display: inline-block;
+    width: 120px;
+    height: 17px;
+    background: url("./images/icon-star.svg");
+    background-repeat: round no-repeat;
+    vertical-align: middle;
+    margin-right: 1.5rem;
+}
+.stars p:first-child {
+    transform: translate(-4rem, 0);
+}
+.stars p:nth-child(2) {
+    transform: translate(-2rem, 0);
+}
+.testimonials {
+    display: flex;
+    gap: 1rem;
+}
+.testimonials section {
+    background-color: var(--VeryDarkMagenta);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 2rem;
+}
+.testimonials p {
+    display: inline-block;
+    margin: 10px;
+}
+.testimonials p:first-of-type::after {
+    content: "Verified Buyer";
+    display: block;
+    color: var(--SoftPink);
+}
+.testimonials img {
+    width: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: sub;
+}
+.testimonials section:nth-child(2) {
+    transform: translate(0, 1rem);
+}
+.testimonials section:nth-child(3) {
+    transform: translate(0, 2rem);
+}
+@media screen and (max-width: 655px) {
+    body {
+        text-align: center;
+        padding: 2rem;
+        flex-wrap: wrap;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .testimonials {
+        flex-direction: column;
+    }
+    .intro {
+        max-width: 100%;
+    }
+    .testimonials {
+        text-align: left;
+    }
+    .testimonials section:nth-child(2),
+    .testimonials section:nth-child(3) {
+        transform: translate(0, 0);
+    }
+    .attribution {
+        position: static;
+    }
+}
+@media screen and (max-width: 735px) {
+    .testimonials {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 895px) {
+    .stars p::before {
+        display: block;
+        margin: 10px auto;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header .stars p {
+        text-align: center;
+        transform: translate(0, 0);
+        margin: 10px 0;
+    }
+}
+@media screen and (min-width: 1400px) {
+    main {
+        transform: scale(1.2);
+    }
+}
