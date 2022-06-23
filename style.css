@@ -170,6 +170,6 @@ h1 {
 }
 @media screen and (min-width: 1400px) {
     main {
-        transform: scale(1.2);
+        transform: scale(1.13);
     }
 }
