@@ -100,5 +100,5 @@ The main challenge that was presented to me was to make the "stars section" beca
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-[live-page]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[live-page]: https://cosmoart.github.io/Social-proof-section-solution/
 [solution-url]: https://www.frontendmentor.io/solutions/social-proof-section-solution-by-cosmo-B3Jy73lUb1
