@@ -115,10 +115,10 @@ h1 {
     object-fit: cover;
     vertical-align: sub;
 }
-.testimonials section:nth-child(2) {
+.testimonials div:nth-child(2) {
     transform: translate(0, 1rem);
 }
-.testimonials section:nth-child(3) {
+.testimonials div:nth-child(3) {
     transform: translate(0, 2rem);
 }
 @media screen and (max-width: 655px) {
@@ -139,8 +139,8 @@ h1 {
     .testimonials {
         text-align: left;
     }
-    .testimonials section:nth-child(2),
-    .testimonials section:nth-child(3) {
+    .testimonials div:nth-child(2),
+    .testimonials div:nth-child(3) {
         transform: translate(0, 0);
     }
     .attribution {
