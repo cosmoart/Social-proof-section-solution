@@ -58,7 +58,7 @@ h1 {
     max-width: 25rem;
 }
 .intro p {
-    color: hsla(300, 43%, 22%, 0.6);
+    color: hsla(300, 43%, 22%, 0.75);
     font-weight: 700;
     font-size: 1rem;
 }
