@@ -114,6 +114,7 @@ h1 {
     border-radius: 50%;
     object-fit: cover;
     vertical-align: sub;
+    height: 2.5rem;
 }
 .testimonials div:nth-child(2) {
     transform: translate(0, 1rem);
